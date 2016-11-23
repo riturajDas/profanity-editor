@@ -1,3 +1,4 @@
+#program that checks for profanity in users text files
 import urllib
 
 def read_text(file_name):
@@ -10,10 +11,12 @@ def read_text(file_name):
 def check_profanity(text_to_check):
     connection = urllib.urlopen("http://www.wdylike.appspot.com/?q="+text_to_check)
     output = connection.read()
+    
     if output == "true":
         output = "YES! Get back at it."
     elif output == "false":
         output = "NONE I can find. Good job!"
+        
     print "Does your file have any curse words? "+output
     connection.close()
 
