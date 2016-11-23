@@ -1,0 +1,5 @@
+Hello World !
+
+This program checks for curse words in a given file so that you may rest in peace when sending important mails to important people.
+
+Well, shit is a curse word here. Let's see if the program detects this or not :P
